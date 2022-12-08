@@ -10,6 +10,12 @@ phases:
   build:
     commands:
       - python app.py
+      - # Get its PID
+      - PID= ps -ef | grep python
+        # Wait for 2 seconds
+      - sleep 2
+        # Kill it
+      - kill $PID
 
   post_build:
     commands:
