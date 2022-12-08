@@ -16,8 +16,10 @@ phases:
       - aws s3 sync . S3://bucket-name/key-name --acl public-read
 
 
-#artifacts:
-#  files:
+artifacts:
+  files:
+    - '**/*'
+
 #    - target/my-app-1.0-SNAPSHOT.jar
 #    - appspec.yml
 #  discard-paths: yes
