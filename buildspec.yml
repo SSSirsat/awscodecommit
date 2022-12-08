@@ -24,7 +24,7 @@ phases:
 
 artifacts:
   files:
-    - '**/*'
+    - target/app01.jar
 
 #    - target/my-app-1.0-SNAPSHOT.jar
 #    - appspec.yml
